@@ -1,0 +1,8 @@
+Django
+djangorestframework
+django-oauth-toolkit
+django-jinja
+psycopg2
+psycopg2-binary
+Jinja2
+djangorestframework-jwt
