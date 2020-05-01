@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework.response import Response
 from django.contrib.auth.hashers import make_password
 from rest_framework import serializers, viewsets
@@ -58,6 +57,7 @@ class UserSerializer(serializers.ModelSerializer):
                 setattr(instance, attr, value)
         instance.save()
         return instance
+
 
 class UserViewSet(viewsets.ModelViewSet):
     filter_backends = (SearchFilter, OrderingFilter)

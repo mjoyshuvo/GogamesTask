@@ -1,8 +1,8 @@
-from django.conf.urls import url, include
+from django.conf.urls import include
 from django.urls import path
 
 app_name = 'Api'
 
 urlpatterns = [
-    path('', include('apps.user.urls', 'user-api')),
+    path('', include('apps.game.urls', 'game-api')),
 ]

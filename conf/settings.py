@@ -25,6 +25,8 @@ EXTERNAL_APPS = [
 PROJECT_APPS = [
     'apps.home',
     'apps.user',
+    'apps.category',
+    'apps.game',
 ]
 
 INSTALLED_APPS = ['django.contrib.admin',
