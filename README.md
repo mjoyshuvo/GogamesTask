@@ -4,6 +4,7 @@ Basic django structure with Login, Logout, Pagination, Model Permission, Custom 
 ## Prerequisites
 * Python
 * Virtualenv
+* Postgres
 
 ## Getting Started
 1. Clone the repository.
@@ -16,13 +17,25 @@ virtualenv -p python3 envname --no-site-packages
 ```
 pip install -r requirements.txt
 ```
-5. Migrate 
+5. Create Database and credentials in conf/settings.py file
+6. Migrate 
 ```
 python manage.py migrate
 ```
-6. Run project 
+7. Run project 
 ```
 python manage.py runserver
+```
+8. Create Super User
+```
+python manage.py createsuperuser
+```
+9. Description:
+In home page you can find 2 links of Admin url and Game url.
+```
+admin url : 0.0.0.0:8000/admin
+game url : 0.0.0.0:8000/api/v1/game
+filter with category : 0.0.0.0:8000/api/v1/game/?category=<category_id>
 ```
 ## Built With
 
